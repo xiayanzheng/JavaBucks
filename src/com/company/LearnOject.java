@@ -1,13 +1,11 @@
 package com.company;
 
-
-
-public class Dog{
+public class LearnOject {
     String bread;
     int age;
     String color;
 
-    public Dog(String name){
+    public LearnOject(String name){
         System.out.print("Name is:" + name);
     }
 
@@ -16,13 +14,24 @@ public class Dog{
     }
 
     public int getAge() {
-        System.out.print("Dog's Age is:"+age);
+        System.out.print("LearnOject's Age is:"+age);
         return age;
     }
 
+    class Variable{
+        int allClicks = 0;
+        String str = "Viko!";
+        public void method(){
+            int i = 0;
+        }
+    }
+
+    class LearnInstanceof{
+        String name = "yzxia";
+    }
 
     public static void main(String []args){
-        Dog myDog = new Dog("Sapo");
+        LearnOject myDog = new LearnOject("Sapo");
         myDog.setAge(1);
         myDog.getAge();
         System.out.print("Age is:"+myDog.age);
